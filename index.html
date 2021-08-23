@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<script src="jquery-3.6.0.min.js"></script>
+<style>
+#TunaLogo {
+	width: 350px;
+	height: 350px;
+	background-color: white;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+#mainTuna {
+	margin-top: 30px;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+#explain{
+font-size: 15px;
+color : #424242;
+}
+#explainBox{
+padding : 10px;
+background-color: white;
+padding : 15px;
+height: 250px;
+border-bottom: 5px outset; 
+border-right: 3px outset;
+}
+#PRPart{
+text-decoration-line: none;
+color: white;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet"
+	href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>4groupTuna</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/wave.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+	crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css" />
+<link
+	href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+	rel="stylesheet" type="text/css" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+	<!-- Navigation-->
+	<nav
+		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+		id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="#page-top">4groupTuna</a>
+			<button
+				class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+				type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				Menu <i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item mx-0 mx-lg-1"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Masthead-->
+	<header class="masthead bg-primary text-white text-center">
+		<div class="container d-flex align-items-center flex-column">
+			<!-- Masthead Avatar Image-->
+			<div id="TunaLogo">
+				<img class="masthead-avatar mb-5" id="mainTuna"
+					src="assets/img/Tuna.ico" alt="조 대표 사진" />
+			</div>
+			<!-- Masthead Heading-->
+			<h1 class="masthead-heading text-uppercase mb-0">4조참치</h1>
+			<!-- Icon Divider-->
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="divider-custom-icon">
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="divider-custom-line"></div>
+			</div>
+			<!-- Masthead Subheading-->
+			<p class="masthead-subheading font-weight-light mb-0">
+				<a id="PRPart" href="#"
+					onclick="window.open('LBJ_PR.html', '_blank', 'width=fit-contents, height=1000');"">🐋
+					이병재</a> &nbsp&nbsp<a id="PRPart" href="#"
+					onclick="window.open('KHJ_PR.html', '_blank', 'width=fit-contents, height=1000');">🐟
+					김혁재</a> &nbsp&nbsp <a id="PRPart" href="#"
+					onclick="window.open('introduce_OHT.html', '_blank', 'width=fit-contents, height=1000');">🐟
+					오현택</a>&nbsp&nbsp <a id="PRPart" href="#"
+					onclick="window.open('profileMaster/YN_PR.html', '_blank', 'width=fit-contents, height=1000');">🐟
+					이예나</a>&nbsp&nbsp <a id="PRPart" href="#"
+					onclick="window.open('indexPLTH.html', '_blank', 'width=fit-contents, height=1000');">🐟
+					이태호</a>
+			</p>
+		</div>
+	</header>
+
+	<!-- About Section-->
+	<section class="page-section bg-primary text-white mb-0" id="about">
+		<div class="container">
+			<!-- About Section Heading-->
+			<h2
+				class="page-section-heading text-center text-uppercase text-white">About</h2>
+			<!-- Icon Divider-->
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="divider-custom-icon">
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="divider-custom-line"></div>
+			</div>
+			<!-- About Section Content-->
+			<div class="row">
+				<div class="col-lg-4 ms-auto">
+					<div id="explainBox">
+						<p class="lead" id="explain">
+							저희 조는 국비 0622반의 아이돌(돌아이)... 4조참치입니다!<br> 이병재, 김혁재, 오현택, 이예나,
+							이태호로 멤버 구성이 되어있고, '즐거울땐 즐겁게 빡셀때 빡세게' 라는 모토로 실습하면서 즐겁게 실습하고 있습니다!
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 me-auto">
+					<div id="explainBox">
+						<p class="lead" id="explain">
+							배달의 민족 어플리케이션에 모티브를 받아 요기요의 금액권 쿠폰 선물하기를 결합한 웹어플리케이션을 제작하였습니다.<br>
+							기존 배달의 민족 어플리케이션과 차별점을 준 부분은 크게 2가지로 한개의 아이디로 점포관리와(사장님모드) 주문을
+							진행할 수 있습니다.<br> 또한, 사용자들끼리 금액권 쿠폰을 선물하고 결재시 사용할 수 있는점으로 차별점을
+							두었습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- About Section Button-->
+			<div class="text-center mt-4">
+				<a class="btn btn-xl btn-outline-light" href="login.html"> <i
+					class="fas fa-download me-2"></i> Project Start!
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer-->
+	<footer class="footer text-center">
+		<div class="container">
+			<div class="row">
+				<!-- Footer Location-->
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="text-uppercase mb-4">Location</h4>
+					<p class="lead mb-0">
+						None
+					</p>
+				</div>
+				<!-- Footer Social Icons-->
+				<div class="col-lg-4 mb-5 mb-lg-0">
+					<h4 class="text-uppercase mb-4">Around the Web</h4>
+					<a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/"><i
+						class="fab fa-fw fa-facebook-f"></i></a> <a
+						class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/?lang=ko"><i
+						class="fab fa-fw fa-twitter"></i></a> <a
+						class="btn btn-outline-light btn-social mx-1" href="#"><i
+						class="fab fa-fw fa-linkedin-in"></i></a> <a
+						class="btn btn-outline-light btn-social mx-1" href="#"><i
+						class="fab fa-fw fa-dribbble"></i></a>
+				</div>
+				<!-- Footer About Text-->
+				<div class="col-lg-4">
+					<h4 class="text-uppercase mb-4">About 4groupTuna</h4>
+					<p class="lead mb-0">
+						4groupTuna is a free. 4groupTuna is idiot <a href="#">#4groupTuna</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Copyright Section-->
+	<div class="copyright py-4 text-center text-white">
+		<div class="container">
+			<small>Copyright &copy; 4groupTuna 2021</small>
+		</div>
+	</div>
+	<!-- Portfolio Modals-->
+	
+	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<!-- * *                               SB Forms JS                               * *-->
+	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+    </script>
+</html>
