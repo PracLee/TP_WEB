@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~참치라이더~</title>
+<link rel="icon" href="imgs/wave.ico">
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	display: block;
+	width: 100%;
+	background: #E7E8E9;
+	float: left;
+	height: fit-content;
+	line-height: 70px;
+}
+
+header img {
+	float: left;
+	width: 100px;
+}
+
+header li {
+	float: right;
+	margin: 3px;
+	padding-right: 25px;
+}
+
+footer {
+	width: 95%;
+	background: black;
+}
+
+#copy {
+	display: block;
+	float: right;
+	color: #E7E8E9;
+	font-size: 5px;
+	float: right;
+}
+
+#container {
+	min-height: calc(100vh - 100px);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 100px);
+}
+
+#loginBox {
+	position: inherit;
+	display: block;
+	border: 1px solid #E7E8E9;
+	margin: 0px auto;
+	padding: 10px;
+	width: fit-content;
+	text-align: center;
+}
+
+#loginBtn {
+	background: none;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 2px;
+}
+
+#loginA {
+	width: 50px;
+}
+
+#loginB {
+	width: 150px;
+}
+</style>
+<script type="text/javascript">
+	var loginCheck = function() {
+		var ID = "";
+		ID += document.querySelector("#inputID").value;
+		var PW = "";
+		PW += document.querySelector("#inputPW").value;
+		if (ID == "") {
+			alert("ID를 입력해주세요!")
+			return false;
+		} else if (PW == "") {
+			alert("PW를 입력해주세요!")
+			return false;
+		}
+		alert(ID + "님 안녕하세요!");
+		return true;
+	}
+
+</script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<h1>
+				<a href="#"> <img alt="tuna" src="imgs/fish.png"></a>
+			</h1>
+			<ul>
+				<li><a href="#"
+					onclick="window.open('signUp3.html', '_blank', 'width=800, height=1000');">회원가입</a></li>
+				<li><a href="#" onclick="alert('아직 미구현이에용~');">ID/PW
+						찾기</a></li>
+			</ul>
+		</header>
+		<div id="container">
+			<div id="loginBox">
+				<form method="post" name="login">
+					<table>
+						<tr>
+							<!-- Login -->
+							<td colspan=2>Login</td>
+						</tr>
+						<tr>
+							<!-- ID -->
+							<td id="loginA">ID</td>
+							<td id="loginB"><input type="text" id="inputID"></td>
+						</tr>
+						<tr>
+							<!-- PW -->
+							<td>PW</td>
+							<td><input type="password" id="inputPW"></td>
+							<td><input type="submit" value="Login" id="loginBtn"
+								onclick= "loginCheck()"></td>
+						</tr>
+
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div id="copy">
+			<p><a href = "main.html">&copy;2021 All rights reserved.</a></p>
+		</div>
+	</footer>
+</body>
+</html>
